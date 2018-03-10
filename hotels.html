@@ -20,20 +20,50 @@
 		</header>
 		<main class="container">
 			<section class="filters">
-				<ul class="filters-item">
-					<li>
-						<h3>Инфраструктура:</h3>
-						<!--Здесь будет форма-->
-					</li>
-					<li>
-						<h3>Тип жилья:</h3>
-						<!--Здесь будет форма-->
-					</li>
-					<li>
-						<h3>Стоимость в сутки (р):</h3>
-						<!--Здесь будет форма-->
-					</li>
-				</ul>
+				<h2 class="visually-hidden">Фильтры параметров отеля</h2>
+				<form class="filters-form" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input" type="checkbox" name="basin" id="basin">
+								<label for="basin">Бассейн</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking">
+								<label for="parking">Парковка</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+								<label for="Wi-Fi">Wi-Fi</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input" type="checkbox" name="hostel" id="hostel">
+								<label for="hostel">Гостиница</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input" type="checkbox" name="hotel" id="hotel">
+								<label for="hotel">Отель</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments">
+								<label for="apartments">Апартаменты</label>
+							</li>
+						</ul>						
+					</fieldset>
+					<fieldset>
+						
+					</fieldset>
+					
+					<p class="filters-form-item">
+						Стоимость в сутки (р):
+					</p>
+				</form>
 			</section>
 			<b>Найдено: 3</b>
 			<!--Здесь будет форма Сортировка-->
