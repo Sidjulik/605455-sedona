@@ -32,7 +32,7 @@
 						<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 						<img src="img/photo-first.jpg" width="512" height="256" alt="Настоящий городок">
 					</div>
-					<ul class="leisure">
+					<ul class="feature-leisure">
 						<li class="leisure-item">
 							<h3>Жилье</h3>
 							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -74,12 +74,8 @@
 			<section class="search">
 				<h2>Заинтересовались?</h2>
 				<p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-				<div class="search-form">
-					<b>Поиск гостиницы в Седоне</b>
-					<!--Здесь будет форма-->
-					<a class="button" href="#">Найти</a>
-				</div>
-				<img src="img/map.jpg" width="768" height="593" alt="Карта">
+					<button class="search-button" type="button">Поиск гостиницы в Седоне</button>					
+					<img src="img/map.jpg" width="768" height="593" alt="Карта">
 			</section>
 		</main>
 		<footer class="main-footer">
@@ -91,10 +87,31 @@
 			</ul>
 			<div class="footer-copyright">
 				<span>Website by</span>
-				<a class="button" href="https://htmlacademy.ru">
+				<a class="footer-button" href="https://htmlacademy.ru">
 					<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
 				</a>
 			</div>
 		</footer>
+		<section class="modal-search">
+			<form class="search-form" action="echo.htmlacademy.ru" method="post">
+				<p class="search-item">
+					<label for="search-checkin">Дата заезда:</label>
+					<input type="text" name="checkin" id="search-checkin" placeholder="24 апреля 2017">
+				</p>
+				<p class="search-item">
+					<label for="search-checkout">Дата выезда:</label>
+					<input type="text" name="search-checkout" id="search-checkout" placeholder="4 июля 2017">					
+				</p>
+				<p class="search-item">
+					<label for="adult">Взрослые:</label>
+					<input type="number" min="1" name="adult" id="adult" value="2">					
+				</p>
+				<p class="search-item">
+					<label for="children">Дети:</label>
+					<input type="number" min="0" name="children" id="children" value="0">					
+				</p>
+				<a class="form-search-button" href="hotels.html">Найти</a>				
+			</form>
+        </section>
 	</body>
 </html>
