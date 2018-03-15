@@ -98,6 +98,9 @@ h3 {
 	background-color: #ffffff;
 }
 .search-form span {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
 	color: rgba(0,0,0,0.3);
 }
 .search-form span:hover {
