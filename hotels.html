@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sedona Hotels</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -61,7 +64,7 @@
 						<input class="range-min" type="text" value="от 0">
 						<input class="range-max" type="text" value="до 3000">
 						<input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="1">
-						<button class="filter-button" type="button">Показать</button>
+						<a href="#" class="filter-button">Показать</a>
 					</p>
 				</form>
 			</section>
@@ -74,8 +77,8 @@
 					<li><a href="#">По рейтингу</a></li>
 				</ul>
 				<div class="sort-result arrows">
-					<a href="#" class="sort-result up"></a>
-					<a href="#" class="sort-result down"></a>
+					<a href="#" class="sort-result up"><img src="img/icon-up-dir.svg"></a>
+					<a href="#" class="sort-result down"><img src="img/icon-down-dir.svg"></a>
 				</div>
 			</div>
 			<ul class="catalog">
@@ -84,13 +87,18 @@
 					<h2>Amara Resort & Spa</h2>
 					<div class="catalog-type">
 						<span>Гостиница</span>
-						<a class="button" href="#">Подробнее</a>
+						<a class="button detail" href="#">Подробнее</a>
 					</div>
 					<div class="catalog-price">
 						<span>от 4000 р.</span>
-						<a class="button" href="#">Забронировать</a>
+						<a class="button reservation" href="#">Забронировать</a>
 					</div>
-					<span class="catalog-stars"><!--Звезды--></span>
+					<div class="stars">
+						<img src="img/star.svg">
+						<img src="img/star.svg">
+						<img src="img/star.svg">
+						<img src="img/star.svg">
+					</div>
 					<span class="catalog-rating">Рейтинг: 8,5</span>
 				</li>
 				<li class="catalog-item">
@@ -98,13 +106,17 @@
 					<h2>Desert Quail Inn</h2>
 					<div class="catalog-type">
 						<span>Мотель</span>
-						<a class="button" href="#">Подробнее</a>
+						<a class="button detail" href="#">Подробнее</a>
 					</div>
 					<div class="catalog-price">
 						<span>от 3000 р.</span>
-						<a class="button" href="#">Забронировать</a>
+						<a class="button reservation" href="#">Забронировать</a>
 					</div>
-					<span class="stars"><!--Звезды--></span>
+					<div class="stars">
+						<img src="img/star.svg">
+						<img src="img/star.svg">
+						<img src="img/star.svg">
+					</div>
 					<span class="rating">Рейтинг: 8,9</span>
 				</li>
 				<li class="catalog-item">
@@ -112,13 +124,16 @@
 					<h2>Villas at Poco Diablo</h2>
 					<div class="catalog-type">
 						<span>Апартаменты</span>
-						<a class="button" href="#">Подробнее</a>
+						<a class="button detail" href="#">Подробнее</a>
 					</div>
 					<div class="catalog-price">
 						<span>от 2000 р.</span>
-						<a class="button" href="#">Забронировать</a>
+						<a class="button reservation" href="#">Забронировать</a>
 					</div>
-					<span class="stars"><!--Звезды--></span>
+					<div class="stars">
+						<img src="img/star.svg">
+						<img src="img/star.svg">
+					</div>
 					<span class="rating">Рейтинг: 9,2</span>
 				</li>
 			</ul>
@@ -133,7 +148,7 @@
 			<div class="footer-copyright">
 				<span>Website by</span>
 				<a class="button" href="https://htmlacademy.ru">
-					<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+					<img class="academy" src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
 				</a>
 			</div>
 		</footer>
