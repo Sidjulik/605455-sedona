@@ -128,11 +128,9 @@ h3 {
 
 
 /*Фильтры поиска отеля, форма*/
-.filter-form {
-	background-color: #3e749e;
+.filter-form {	
 	color: #ffffff;
-}
-.filter {
+	background-color: #3e749e;
 	background-image: url(../img/background-hotel.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
