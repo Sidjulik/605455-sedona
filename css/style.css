@@ -211,4 +211,49 @@ h3 {
 	color: rgba(255,255,255,0.3);
 }
 
-/*Подвал*/
+/*Сеточные стили*/
+html,
+body {
+	 min-width: 768px;
+	 min-height: 2762px;
+}
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-header-logo {
+	width: 138px;
+	height: 70px;	
+	
+}
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    width: 685px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.title {
+	width: 768px;
+	height: 512px;
+	margin: auto;
+	padding: 0;
+}
+.feature {
+	margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+.feature-text {
+	width: 500px;
+	min-height: 100px;
+	margin-top: 56px;
+	margin-bottom: 56px;
+
+
+}
