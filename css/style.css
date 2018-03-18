@@ -211,4 +211,10 @@ h3 {
 	color: rgba(255,255,255,0.3);
 }
 
-/*Подвал*/
+/*Сеточные стили*/
+
+.main-header.header {
+	min-height: 56px;
+}
+
+
