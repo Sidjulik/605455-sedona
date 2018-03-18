@@ -212,49 +212,55 @@ h3 {
 }
 
 /*Сеточные стили*/
-<<<<<<< HEAD
+
 html,
 body {
-	 min-width: 768px;
+	 min-width: 1200px;
 	 min-height: 2762px;
-}
-.main-navigation {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	 padding-left: 15px;
+	 padding-right: 15px;	 
 }
 .main-header-logo {
 	width: 138px;
 	height: 70px;	
-	
+	order: 2;/*временно*/
+}    
+.main-navigation {
+	padding-left: 56px;
+	padding-right: 56px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;/*временно*/
 }
 .site-navigation {
-    margin: 0;
-    padding: 0;
-    width: 685px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-.title {
-	width: 768px;
-	height: 512px;
-	margin: auto;
-	padding: 0;
-}
-.feature {
 	margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.title {
+	height: 564px
+}
+
 .feature-text {
 	width: 500px;
-	min-height: 100px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: 56px;
 	margin-bottom: 56px;
+}
 
-
+.feature-item {
+	display: flex;
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.description-second {
+	order: 2;
 }
