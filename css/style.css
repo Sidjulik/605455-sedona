@@ -14,7 +14,7 @@ a{
 	text-decoration: none;
 }
 .container .title {
-	background-image: url("../img/background-photo.jpg");	
+	background-image: url("../img/background-photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -215,19 +215,24 @@ h3 {
 
 html,
 body {
-	 min-width: 1200px;
+	 min-width: 1170px;
 	 min-height: 2762px;
 	 padding-left: 15px;
 	 padding-right: 15px;	 
 }
+.container {
+  width: 1170px;
+  margin: 0 auto;
+ }
 .main-header-logo {
 	width: 138px;
 	height: 70px;	
 	order: 2;/*временно*/
 }    
 .main-navigation {
-	padding-left: 56px;
-	padding-right: 56px;
+	margin: 0 auto;
+	width: 1170px;
+	
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;/*временно*/
@@ -240,6 +245,8 @@ body {
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 56px;
+	padding-right: 56px;
 }
 
 .title {
@@ -256,11 +263,40 @@ body {
 }
 
 .feature-item {
+	margin: 0;
+    padding: 0;
 	display: flex;
 	width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.description-second {
+
+.description.second {
 	order: 2;
+}
+.description {
+	padding-left: 47px;
+	padding-right: 47px;
+	padding-top: 45px;
+	text-align: center;
+}
+.feature.leisure,
+.feature.list {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+    padding: 0;
+}
+
+.leisure-item,
+.list-point {
+	width: 285px;
+}
+.leisure-item {
+	margin-top: 160px;
+	margin-bottom: 85px;
+}
+.list-point {
+	margin-top: 45px;
+	margin-bottom: 60px;
 }
