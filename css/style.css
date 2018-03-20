@@ -354,7 +354,6 @@ body {
 }
 .sort-result {    
     display: flex;
-    padding-left: 72px;
     padding-right: 72px;
     margin-bottom: 33px;
 }
