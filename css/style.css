@@ -13,14 +13,17 @@ body {
 a{
 	text-decoration: none;
 }
-.container .title {
+.background-image {	
 	background-image: url("../img/background-photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
+	height: 566px;
+	margin-top: -56px;
 }
 .site-navigation {
 	line-height: 26px;	
 	list-style: none;
+	background-color: #ffffff;
 }
 .site-navigation a {
 	color: #000000;
@@ -217,41 +220,33 @@ h3 {
 html,
 body {
 	 min-width: 1170px;
-	 min-height: 933px;
-	 padding-left: 15px;
-	 padding-right: 15px;	 
+	 min-height: 933px; 
 }
 .container {
   width: 1170px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
  }
 .main-header-logo {
 	width: 138px;
-	height: 70px;	
-	order: 2;/*временно*/
+	height: 70px;
 }    
 .main-navigation {
 	margin: 0 auto;
 	width: 1170px;
-	
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;/*временно*/
 }
 .site-navigation {
 	margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 72px;
 	padding-right: 72px;
-}
-
-.title {
-	height: 564px
+	background-color: #ffffff;
 }
 
 .feature-text {
@@ -276,8 +271,8 @@ body {
 	order: 2;
 }
 .description {
-	padding-left: 47px;
-	padding-right: 47px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-top: 45px;
 	text-align: center;
 }
@@ -401,4 +396,38 @@ body {
     width: 111px;
     margin-left: auto;
     text-align: right;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-header-logo {
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+    right: 0;
+}
+.site-navigation li {
+	width: 230px;
+   display: block;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
 }
