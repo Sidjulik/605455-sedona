@@ -431,3 +431,44 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-child(4) {
 	text-align: right;
 }
+.leisure-item {
+    position: relative;
+}
+.leisure-item .icon-1::before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 80px;	
+	background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -75px;
+    left: 105px;
+}
+
+.leisure-item .icon-2::before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 80px;	
+	background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -75px;
+    left: 105px;
+}
+.leisure-item .icon-3::before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 80px;	
+	background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -80px;
+    left: 110px;
+}
+.search.preview h2 {
+	padding: 34px 0;
+	margin: 0;
+}
