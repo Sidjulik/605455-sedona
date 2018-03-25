@@ -333,6 +333,7 @@ body {
 	margin-left: auto;
     margin-right: 100px;
 }
+
 .main-footer .container {
     display: flex;
 }
@@ -511,7 +512,7 @@ input[type="radio"].visually-hidden {
 .footer-social {
     display: flex;
     width: 150px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
@@ -533,17 +534,22 @@ input[type="radio"].visually-hidden {
 .modal-search {
     position: absolute;
     left: 300px;
-    top: 302px;
-    margin-right: auto;
+    top: 300px;
     margin-left: auto;
+    margin-right: auto;
     color: #000000;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     background-color: #ffffff;
-    width: 570px;
+    width: 460px;
     padding-top: 55px;
-    padding-bottom: 55px;  
+    padding-bottom: 55px;
+    padding-left: 55px;
+    padding-right: 55px;  
+}
+.search-item {
+    width: 460px;
 }
 .search-item input {
     font: inherit;
@@ -562,17 +568,26 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/calendar.svg);
     background-position: 315px center;
     background-repeat: no-repeat;
+    margin-left: 10px;
 }
 .search-form p:nth-child(3) input,
 .search-form p:nth-child(4) input {
     padding: 0 36px;
-    width: 115px;
+    width: 110px;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.search-form p:nth-child(3) input {
+    margin-left: 40px;
+}
+.search-form p:nth-child(4) input {
+    margin-left: 30px;
+}
 
 .search-form {
+    margin: 0;
+    width: 460px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -582,9 +597,11 @@ input[type="radio"].visually-hidden {
 .search-form p:nth-child(4) {
 
 
-    width: 230px;
+    width: 228px;
 }
 .search-form a {
+    margin: 0;
+    padding: 0;
     width: 460px;
     align-self: center;
     font-size: 21px;
