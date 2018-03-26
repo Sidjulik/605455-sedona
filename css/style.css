@@ -338,7 +338,9 @@ body {
 .main-footer {
 	margin: 0;
     padding-top: 35px;
-    padding-bottom: 35px;    
+    padding-bottom: 35px;
+    margin-top: -118px;
+    background-color: rgba(255,255,255,0.9);    
 }
 .footer-hashtag {
 	width: 140px;
@@ -576,8 +578,9 @@ input[type="radio"].visually-hidden {
     padding-left: 55px;
     padding-right: 55px;  
 }
-.search-item {
-    width: 460px;
+.search-form {
+   
+    display: inline-block;
 }
 .search-item input {
     font: inherit;
@@ -591,6 +594,7 @@ input[type="radio"].visually-hidden {
     padding-right: 30px;
     border: none;
 }
+
 .search-form p:nth-child(1) input,
 .search-form p:nth-child(2) input {
     background-image: url(../img/calendar.svg);
@@ -600,34 +604,47 @@ input[type="radio"].visually-hidden {
 }
 .search-form p:nth-child(3) input,
 .search-form p:nth-child(4) input {
-    padding: 0 36px;
-    width: 115px;
+    padding: 0;
+    width: 38px;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.search-form p:nth-child(3) input {
-    margin-left: 35px;
-}
-.search-form p:nth-child(4) input {
-    margin-left: 30px;
-}
-
-.search-form {
-    margin: 0;
-    width: 460px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-between;
-}
 .search-form p:nth-child(3),
 .search-form p:nth-child(4) {
 
-
-    width: 228px;
 }
-.search-form a {
+
+.search-item:nth-child(3),
+.search-item:nth-child(4) {
+    width: 230px;
+}
+
+.search-item .amt {
+	width: 38px;
+	height: 34px;
+	font: inherit;
+    color: #a9a9a9;
+    text-transform: uppercase;
+    border: none;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.search-item .amt:hover {
+	color: #000000;
+}
+.search-item .amt:active {
+	color: #81b3d2;
+}
+.amt.minus {
+	margin-right: -4px;
+}
+.amt.plus {
+	margin-left: -4px;
+}
+
+
+.search-form .form-search-button {
     margin: 0;
     padding: 0;
     width: 460px;
@@ -636,6 +653,12 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     padding-bottom: 14px;
     padding-top: 14px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.search-form button:focus {
+	outline: none;
 }
 
 .filter-form {
@@ -743,7 +766,15 @@ fieldset {
 .sort-result .sorting {
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 0;   
     
-    
+}
+
+
+.main-footer {
+	margin: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: -118px;
+    background-color: rgba(255,255,255,0.9);    
 }
