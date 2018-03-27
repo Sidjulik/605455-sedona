@@ -227,13 +227,15 @@ h3 {
 html,
 body {
 	 min-width: 1200px;
-	 min-height: 933px; 
+	 min-height: 933px;	 
+	 background-color: #f2f2f2;
+	 box-shadow: 50px 50px 50px 50px black; 
 }
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 30px 3px #999999;
  }
 .main-header-logo {
 	width: 138px;
@@ -242,6 +244,7 @@ body {
 .main-navigation {
 	margin: 0 auto;
 	width: 1200px;
+
 }
 .site-navigation {
 	margin: 0;
@@ -811,6 +814,7 @@ fieldset {
 .main-footer {
 	position: absolute;
 	bottom: 0;
+
 }
 
 .footer-copyright {
@@ -830,4 +834,8 @@ fieldset {
 }
 .footer-copyright span {
 	margin-right: 5px;
+}
+.main-footer .container {
+	box-shadow: none;
+	background-color: transparent;
 }
