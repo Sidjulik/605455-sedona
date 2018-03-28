@@ -767,15 +767,19 @@ fieldset {
   left: -37px;
   border-radius: 3px;
 }
-.filter-option input[type="checkbox"]:checked + .checkbox-indicator::before {
+.filter-option input[type="checkbox"]:checked  + .checkbox-indicator::before {
   content: "";
-  position: relative;  
-  height: 18px;
+  position: absolute;  
+  height: 17px;
   width: 7px;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  transform: rotate(45deg);  
+  top: -6px;
+  right: 0;
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  transform: rotate(45deg);
+
 }
+
 
 
 .price-controls {
