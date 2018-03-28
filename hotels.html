@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header header">
+        <header class="main-header header container">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
                     <img src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
@@ -30,14 +30,17 @@
                         <ul>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input" type="checkbox" name="basin" id="basin">
+                                <span class="checkbox-indicator"></span>
                                 <label for="basin">Бассейн</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking">
+                                <span class="checkbox-indicator"></span>
                                 <label for="parking">Парковка</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                                <span class="checkbox-indicator"></span>
                                 <label for="Wi-Fi">Wi-Fi</label>
                             </li>
                         </ul>
@@ -47,14 +50,17 @@
                         <ul>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input" type="checkbox" name="hostel" id="hostel">
+                                <span class="checkbox-indicator"></span>
                                 <label for="hostel">Гостиница</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="hotel">
-                                <label for="hotel">Отель</label>
+                                <span class="checkbox-indicator"></span>
+                                <label for="hotel">Мотель</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments">
+                                <span class="checkbox-indicator"></span>
                                 <label for="apartments">Апартаменты</label>
                             </li>
                         </ul>
@@ -72,7 +78,7 @@
                             <div class="range-toggle range-toggle-min"></div>
                             <div class="range-toggle range-toggle-max"></div>
                         </div>
-                        <input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="1">
+                        <input class="visually-hidden" type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="1">
                         <button class="filter-button" type="submit">Показать</button>
                     </div>
                 </form>
@@ -167,7 +173,7 @@
                 </li>
             </ul>
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer hotels container">
             <section class="container">
                 <div  class="footer-hashtag">
                     <a class="hashtag" href="#">#visitsedona</a>
