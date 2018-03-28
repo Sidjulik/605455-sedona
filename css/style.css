@@ -174,7 +174,6 @@ h3 {
 }
 .sort-result {
 	font-size: 12px;
-	line-height: 18px;
 }
 .sort-result .active {
 	color: #81b3d2;
@@ -182,6 +181,20 @@ h3 {
 .sort-result li a {
 	color: rgba(0,0,0,0.3);
     padding: 0;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-result li a:hover {
+	color: #81b3d2;
+}
+.sort-result-arrows path:hover {
+	fill: #231f20;
+}
+.sort-result-arrows path:active {
+	fill: #81b3d2;
+}
+.sort-result li a:active {
+	color: #000000;
 }
 .catalog-item h2:hover {
 	color: #81b3d2;
@@ -196,6 +209,10 @@ h3 {
 .catalog-item .rating {
 	background-color: #f2f2f2;
 	color: #666666;
+	padding: 3px 14px;
+	position: relative;
+	top: 45px;
+
 }
 .button.detail {
 	color: #ffffff;
@@ -338,7 +355,7 @@ body {
     margin-left: auto;
 }
 .main-footer {
-	margin: 0;
+	
     padding-top: 36px;
     padding-bottom: 42px;
     
@@ -392,8 +409,15 @@ body {
     display: flex;
     padding-right: 72px;
     padding-left: 72px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    padding-bottom: 30px;
+    margin-top: 32px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.sort-result-arrows {
+	margin-left: auto;
+}
+.arrows-up {
+	margin-right: 10px;
 }
 
 .sort-result .found {    
@@ -422,24 +446,44 @@ body {
     padding: 0;
     padding-left: 72px;
     padding-right: 72px;    
-    margin-bottom: 31px;
+    padding-bottom: 28px;
     margin-top: 31px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item .item-img {
-    width: 135px;    
+    width: 135px;
+    height: 90px;    
     margin-right: 30px;
 }
 .catalog-item .item-detail {
-    width: 258px;
+    width: 300px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.catalog-price a {
+	display: inline-block;
+	padding: 4px 17px;
+}
+.catalog-type span {
+	display: inline-block;
+	width: 113px;
+}
+
+.item-detail .name-hotel {
+	margin: 0;
+	line-height: 14px;
+}
+
 
 .catalog-item .item-stars-rating {
     width: 111px;
     margin-left: auto;
     text-align: right;
 }
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -723,21 +767,15 @@ fieldset {
   left: -37px;
   border-radius: 3px;
 }
-.filter-option input[type="checkbox"]:checked .checkbox-indicator::before {
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
   position: relative;  
   height: 18px;
   width: 7px;
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
-  transform: rotate(45deg);
-  background-color: red;
-  z-index: 100;
-
-  
+  transform: rotate(45deg);  
 }
-
-
 
 
 .price-controls {
@@ -834,9 +872,11 @@ fieldset {
 .sort-result .sorting {
     display: flex;
     padding: 0;
-    margin: 0;   
-    
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;   
 }
+
 .search {
 	position: relative;
 }
@@ -871,5 +911,12 @@ fieldset {
 
 .main-footer.hotels {
 	position: static;
-
+	background-color: #ffffff;
+	padding-top: 39px;
+}
+.main-footer.hotels .footer-hashtag {
+	margin-left: 132px;
+}
+.main-footer.hotels .footer-copyright {
+	margin-right: 96px;
 }
