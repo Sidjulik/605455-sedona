@@ -243,16 +243,18 @@ h3 {
 
 html,
 body {
-	 min-width: 1200px;
+	 padding: 0 15px;
+	 width: 1200px;
 	 min-height: 933px;	 
 	 background-color: #f2f2f2;
-	 box-shadow: 50px 50px 50px 50px black; 
+	 margin: auto;
+	 
 }
 .container {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 20px 30px 3px #999999;
+  box-shadow: 1px 10px 15px 1px grey;
  }
 .main-header-logo {
 	width: 138px;
@@ -261,6 +263,7 @@ body {
 .main-navigation {
 	margin: 0 auto;
 	width: 1200px;
+	position: relative;
 
 }
 .site-navigation {
@@ -824,7 +827,7 @@ fieldset {
   border: none;
 }
 .range-controls {
-	display: relative;
+	position: relative;
 
 	margin-bottom: 32px;
 }
@@ -841,10 +844,9 @@ fieldset {
 }
 .range-toggle {
   position: absolute;
-  top: 162px;
+  top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -852,7 +854,7 @@ fieldset {
   cursor: pointer;
 }
 .range-toggle-max {
-  left: 1134px;
+  left: 250px;
 }
 .range-toggle:hover {
   border: 9px solid #ffffff;
