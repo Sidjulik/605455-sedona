@@ -17,10 +17,7 @@ a{
 	background-image: url("../img/background-photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
-	height: 511px;
-	box-shadow: 1px 10px 15px 1px grey;
-
-	
+	height: 511px;	
 }
 .site-navigation {
 	line-height: 26px;	
@@ -253,6 +250,7 @@ body {
 	 
 }
 .container {
+  display: block;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -281,11 +279,14 @@ body {
 	background-color: #ffffff;
 }
 .site-navigation li:nth-child(2) {
-    margin-right: 97px;
+    margin-right: 94px;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
 }
 .feature {
 	background-color: #ffffff;
-	box-shadow: 1px 10px 15px 1px grey;
 }
 
 .feature-text {
@@ -293,8 +294,8 @@ body {
 	height: 100px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 56px;
-	margin-bottom: 58px;
+	padding-top: 60px;
+	margin-bottom: 57px;
 	background-color: #ffffff;
 }
 .feature-text p {
@@ -339,15 +340,15 @@ body {
 }
 .leisure-item {
 	margin-top: 140px;
-	margin-bottom: 68px;
+	margin-bottom: 70px;
 }
 .leisure-item h3 {
     margin-bottom: 23px;
 
 }
 .list-point {
-	margin-top: 26px;
-	margin-bottom: 45px;
+	margin-top: 28px;
+	margin-bottom: 50px;
 }
 .list-point h3 {
     margin-bottom: 24px;
@@ -365,8 +366,8 @@ body {
 }
 .main-footer {
 	
-    padding-top: 36px;
-    padding-bottom: 42px;
+    padding-top: 38px;
+    padding-bottom: 38px;
     
     background-color: rgba(255,255,255,0.9);    
 }
@@ -374,7 +375,7 @@ body {
 	width: 140px;
 	margin: 0;
 	margin-right: 142px;
-    margin-left: 115px;
+    margin-left: 131px;
     padding-top: 10px;    
 }
 
@@ -387,7 +388,7 @@ body {
 	width: 198px;
 	margin: 0;
 	margin-left: auto;
-    margin-right: 114px;
+    margin-right: 100px;
 }
 
 .main-footer .container {
@@ -523,8 +524,7 @@ input[type="radio"].visually-hidden {
    display: block;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+.search-item-people {
 	text-align: right;
 }
 .leisure-item {
@@ -619,7 +619,7 @@ input[type="radio"].visually-hidden {
 .modal-search {
     position: absolute;
     left: 315px;
-    top: 291px;
+    top: 289px;
     margin-left: auto;
     margin-right: auto;
     color: #000000;
@@ -641,32 +641,32 @@ input[type="radio"].visually-hidden {
 .search-item:nth-child(2) {
 	padding-bottom: 3px;	
 }
-/*.search-item:nth-child(3) {	
-	margin-right: 50px;
-}*/
 
-.search-item:nth-child(3) label {
+
+.search-item-people label {
 	margin-right: 36px;
 }
-.search-item:nth-child(4) label {
-	margin-right: 25px;
+.search-item-people:nth-child(2) label {
+	margin-right: 24px;
 }
-.search-item:nth-child(1) input,
-.search-item:nth-child(2) input {
+
+.search-item input {
+	min-height: 35px;
     font: inherit;
     color: #000000;
     text-transform: uppercase;
-    box-sizing: border-box;
-    width: 346px;
+    box-sizing: border-box;    
     padding-left: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 30px;
-    border: none;
-    margin-left: 16px;
+    border: none;    
 }
-.search-item:nth-child(3) input,
-.search-item:nth-child(4) input {
+.search-item-date input {
+	width: 346px;
+	margin-left: 16px;
+}
+.search-item-people input {
     padding: 0;
     width: 38px;
     height: 36px;
@@ -678,6 +678,7 @@ input[type="radio"].visually-hidden {
 .search-item {
 	position: relative;
 }
+
 .search-item svg {
 	position: absolute;
 	left: 428px;
@@ -694,20 +695,22 @@ input[type="radio"].visually-hidden {
 }
 
 }
-.search-form:nth-child(3) input,
-.search-form:nth-child(4) input {
+.search-item-people input {
     padding: 0;    
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.search-item:nth-child(3),
-.search-item:nth-child(4) {
+.search-item-people {
     text-align: left;
   }
+.search-item-people:first-child {
+	margin-right: 56px;
+}
 
 .search-item .amt {
+	padding-bottom: 0;
 	width: 38px;
 	height: 36px;
 	font: inherit;
@@ -738,7 +741,7 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     padding-bottom: 15px;
     padding-top: 16px;
-    margin-top: 41px;
+    margin-top: 24px;
     border: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -930,23 +933,7 @@ fieldset {
 .main-footer.hotels .footer-copyright {
 	margin-right: 96px;
 }
-/*.search-form {
-	display: flex;
-	flex-direction: column;
-}
-.search-form p:nth-child(3),
-.search-form p:nth-child(4) {
-	width: 220px;
-	display: flex;
-}
-.search-form p:nth-child(4) {
-	width: 175px;
-}*/
+
 .adult-children {
 	display: flex;
-}
-
-.adult-children p {
-	display: block;
-	width: 38px;
 }
