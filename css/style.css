@@ -386,6 +386,9 @@ h3 {
 .description h2 {
   font-weight: bold;
 
+  width: 200px;    
+  margin-right: auto;
+  margin-left: auto;
   padding-bottom: 7px;
 }
 
@@ -1020,8 +1023,9 @@ fieldset {
 
 .price-controls label {
   font-size: 14px;
+  margin-top: 5px;
   font-weight: normal;
-  line-height: 32px;
+  line-height: 21px;
 
   display: inline-block;
 
@@ -1039,12 +1043,13 @@ fieldset {
 
 .price-controls input {
   font: inherit;
+  line-height: 1;
 
   box-sizing: border-box;
   width: 50px;
   margin: 0;
-  padding-left: 5px;
-
+  padding-left: 3px;
+  
   color: inherit;
   border: none;
   background: none;
