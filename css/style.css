@@ -426,7 +426,10 @@ h3 {
 }
 
 .list-point h3 {
+  width: 150px;
   margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list-point p {
