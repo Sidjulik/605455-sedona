@@ -149,5 +149,18 @@
 				</section>
 			</footer>
 		</section>
+		<script>
+
+			var searchButton = document.querySelector(".search-button");
+			var popup = document.querySelector(".modal-search");
+
+			searchButton.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.toggle("modal-show");				
+			});
+
+			
+			
+		</script>
 	</body>
 </html>
