@@ -1207,3 +1207,9 @@ fieldset {
 	-webkit-animation-duration: 0.6s;
 	        animation-duration: 0.6s;
 }
+
+.no-js .modal-search {
+	display: block;
+	-webkit-box-shadow: 0px 0px 10px 0px lightgray;
+	        box-shadow: 0px 0px 10px 0px lightgray;
+}

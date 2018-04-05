@@ -5,6 +5,8 @@
 	var checkin = popup.querySelector("[name=checkin]");
 	var checkout = popup.querySelector("[name=search-checkout]");
 
+	document.documentElement.classList.replace("no-js", "js");
+
 	searchButton.addEventListener("click", function(evt) {
 	  evt.preventDefault();
 	  popup.classList.toggle("modal-show");
@@ -15,6 +17,6 @@
 	form.addEventListener("submit", function(evt) {
 	  if (!checkin.value || !checkout.value || adult.value) {
 	    evt.preventDefault();
-	    popup.classList.add("modal-error")
+	    popup.classList.add("modal-error");
 	  }
 	});
